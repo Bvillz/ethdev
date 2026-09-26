@@ -42,7 +42,7 @@ function siteConfig(env = process.env) {
     launchDate: env.LAUNCH_DATE || '',
     feePercent: env.FEE_PERCENT || '',
     spinSchedule: env.SPIN_SCHEDULE || '',
-    minHoldDays: env.MIN_HOLD_DAYS || '',
+    minHold: env.MIN_HOLD_LABEL || '',
     xHandle: (env.X_HANDLE || '').replace(/^@/, '').replace(/[^A-Za-z0-9_]/g, ''),
     telegramUrl: safeUrl(env.TELEGRAM_URL),
     buyUrl: safeUrl(env.BUY_URL),

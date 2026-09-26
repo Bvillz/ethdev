@@ -142,7 +142,7 @@
           </div>
           <div class="stats">
             <div class="stat"><div class="stat-label">Wallets on the wheel</div><div class="stat-value" id="stat-wallets">0</div></div>
-            <div class="stat"><div class="stat-label">Next spin</div><div class="stat-value" data-config="spinSchedule" data-fallback="[SCHEDULE]">[SCHEDULE]</div></div>
+            <div class="stat"><div class="stat-label">Spins</div><div class="stat-value" data-config="spinSchedule" data-fallback="Every 3 min">Every 3 min</div></div>
           </div>
           <button type="button" class="btn btn-accent btn-lg" id="spin-btn">Spin the demo wheel</button>
           <p class="result" id="spin-result" role="status" aria-live="polite"></p>
@@ -160,9 +160,9 @@
 
           <div class="steps">
             <div class="step"><span class="step-n">1</span><div><h3>Every trade feeds the pot</h3><p><span data-config="feePercent" data-suffix="%" data-fallback="[FEE]%">[FEE]%</span> of each $GOOFER buy and sell goes into the flywheel pot.</p></div></div>
-            <div class="step"><span class="step-n">2</span><div><h3>Your slice = your share</h3><p>The more $GOOFER you hold, the bigger your slice. Wallets need to hold for at least <span data-config="minHoldDays" data-suffix=" days" data-fallback="[MIN DAYS] days">[MIN DAYS] days</span> to be on the wheel.</p></div></div>
-            <div class="step"><span class="step-n">3</span><div><h3>One spin, one winner</h3><p>The spin uses a verifiable random number, and the pot goes straight to the winning wallet. Anyone can check both on-chain.</p></div></div>
-            <div class="step"><span class="step-n">4</span><div><h3>The wheel keeps turning</h3><p>The pot empties, trading fills it again, and the next spin comes round. Winners spend it, save it or put it wherever they like.</p></div></div>
+            <div class="step"><span class="step-n">2</span><div><h3>Your slice = your share</h3><p>The more $GOOFER you hold, the bigger your slice. Wallets that bought in the last <span data-config="minHold" data-fallback="3 minutes">3 minutes</span> sit that spin out, so nobody can buy in just to snipe the pot.</p></div></div>
+            <div class="step"><span class="step-n">3</span><div><h3>One spin, one winner</h3><p>The spin uses a verifiable random number from Chainlink, and the whole pot goes straight to the winning wallet in $GOOFER. Anyone can check both on Ethereum.</p></div></div>
+            <div class="step"><span class="step-n">4</span><div><h3>The wheel keeps turning</h3><p>The pot empties, trading fills it again, and three minutes later the next spin comes round. Winners spend it, save it or put it wherever they like.</p></div></div>
           </div>
 
           <div class="legend">
