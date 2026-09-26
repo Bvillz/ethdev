@@ -1,0 +1,15 @@
+{
+  "name": "goofer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page for $GOOFER, the meme agent with a flywheel.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}
